@@ -77,14 +77,13 @@ global $username,$id;
  $data = "adet=10&userID=".$id."&userName=".$username;
  return curl($url,head(),$data); }
 
-system("clear");
+
 an(" {$m}╔╦╗{$p}┌─┐┬┌─┬┌─┐┌─┐┬{$m}╔╦╗═╗ ╦\n");
 an(" {$m} ║ {$p}├─┤├┴┐│├─┘│  │{$m}║║║╔╩╦╝\n");
 an("  {$m}╩ {$p}┴ ┴┴ ┴┴┴  └─┘┴{$m}╩ ╩╩ ╚═\n");
 an(" {$c}~ {$p}Author{$abu}: {$p}Ryuk\n");
 an(" {$c}~ {$p}Version{$abu}: {$k}v0.12\n");
 
-system("rm cookie.txt");
 $ftoken = token()[1];
 $tk=explode('";',explode('&antiForgeryToken=',$ftoken)[1])[0];
 
